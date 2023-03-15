@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Caluculator</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Markup of calculator 👇 -->
+    <div class="calculator">
+      <!-- screen -->
+      <div class="screen">
+        <div class="screenContent">
+          <p class="calculation">
+            <span id="calculationText"></span>
+          </p>
+          <p class="result">
+            <span id="resultText">0</span>
+          </p>
+        </div>
+      </div>
+      <!-- screen -->
+      <!-- keys -->
+      <div class="keys">
+        <table>
+          <tr>
+            <td>
+              <input class="btn math" type="button" id="clear" value="C" />
+            </td>
+            <td><input class="btn" type="button" id="back" value="<" /></td>
+            <td>
+              <input
+                class="btn"
+                type="button"
+                onclick="insert('/')"
+                value="/"
+              />
+            </td>
+            <td>
+              <input
+                class="btn exit"
+                type="button"
+                onclick="insert('*')"
+                value="x"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="btn" type="button" onclick="insert(7)" value="7" />
+            </td>
+            <td>
+              <input class="btn" type="button" onclick="insert(8)" value="8" />
+            </td>
+            <td>
+              <input class="btn" type="button" onclick="insert(9)" value="9" />
+            </td>
+            <td>
+              <input
+                class="btn math"
+                type="button"
+                onclick="insert('-')"
+                value="-"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="btn" type="button" onclick="insert(4)" value="4" />
+            </td>
+            <td>
+              <input class="btn" type="button" onclick="insert(5)" value="5" />
+            </td>
+            <td>
+              <input class="btn" type="button" onclick="insert(6)" value="6" />
+            </td>
+            <td>
+              <input
+                class="btn math"
+                type="button"
+                onclick="insert('+')"
+                value="+"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="btn" type="button" onclick="insert(1)" value="1" />
+            </td>
+            <td>
+              <input class="btn" type="button" onclick="insert(2)" value="2" />
+            </td>
+            <td>
+              <input class="btn" type="button" onclick="insert(3)" value="3" />
+            </td>
+            <td rowspan="2">
+              <input type="button" id="equal" value="=" class="btn operator" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input
+                class="btn zero"
+                type="button"
+                value="0"
+              />
+            </td>
+            <td><input class="btn" type="button" value="." /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- keys -->
+
+    <script src="main.js"></script>
+  </body>
+</html>

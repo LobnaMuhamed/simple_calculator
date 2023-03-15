@@ -1,0 +1,91 @@
+/* Variables */
+:root {
+  --color: rgb(109, 81, 164);
+}
+
+/* Utility  */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #5ba5db87;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/* Calculator */
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:250px;
+  border-radius: 15px;
+  overflow: hidden;
+  font-family: "Fira Sans", sans-serif;
+}
+/* screen */
+.calculator .screen {
+  height: 200px;
+  background: #001e34;
+}
+.calculator .screenContent {
+  -webkit-user-select: none;
+  user-select: none;
+  text-align: end;
+  padding: 17px;
+}
+.calculator .screen .calculation {
+  font-size: 25px;
+  color: white;
+  overflow: auto;
+  padding-top: 20px;
+}
+.calculator .screen .result {
+  font-size: 30px;
+  padding-top: 10px;
+  color: #fff;
+}
+/* keys */
+
+.calculator table {
+  background-color: #001e34;
+  border-collapse: collapse;
+}
+tr,
+td {
+  border-collapse: collapse;
+}
+td {
+  outline: 2px solid black;
+}
+
+.btn {
+  width: 60px;
+  height: 50px;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  background-color: #002b4a;
+  color: white;
+  outline: none;
+}
+input.operator {
+  color: #26b821;
+  height: 100px;
+  border-bottom-right-radius: 15px;
+}
+.calculator td input.zero {
+  width: 120px;
+  border-bottom-left-radius: 15px;
+}
+.math {
+  color: #9a80e4;
+}
+input[type="button"]:hover {
+  background-color: #ffa800;
+  color: #fff;
+  transition: all 0.26s linear;
+}
