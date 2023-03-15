@@ -36,6 +36,7 @@ body {
   user-select: none;
   text-align: end;
   padding: 17px;
+  overflow: hidden;
 }
 .calculator .screen .calculation {
   font-size: 25px;
